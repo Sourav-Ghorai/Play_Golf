@@ -6,7 +6,7 @@
     color: #fff;
 }
 
-/* Colring the seleted line  */
+/* Coloring the seleted line  */
 
 *::selection{
     color:#95c11e;
@@ -340,6 +340,7 @@ video{
     justify-content: space-between;
     margin: 20px auto;
     padding: 7px;
+    /* z-index: 9; */
 }
 
 #green-div img{
@@ -363,6 +364,7 @@ video{
     align-items: center;
     justify-content: center;
     position: relative;
+    z-index: 9;
 }
 
 #page3 p{
@@ -401,6 +403,7 @@ video{
     justify-content: center;
     gap: 40px;
     position: relative;
+    z-index: 9;
 }
 
 #elem{
@@ -457,18 +460,22 @@ video{
 
 /* Footer section  */
 
-#footer{
-    height: 45vh;
+#footer-block{
+    height: auto;
     width: 100%;
     background: linear-gradient(to left bottom, #1aa138, #95c11e);
+    text-align: center;
+}
+
+#footer{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    /* gap: 20px; */
-    padding: 100px;
+    padding: 50px;
+    padding-bottom: 0;
     line-height: 30px;
-    /* color: black; */
     position: relative;
+    z-index: 10;
 }
 #footer img{
     width: 100px;
@@ -493,4 +500,16 @@ video{
 
     /* background-size: cover;
     background-position: center; */
+}
+
+#profile{
+    font-size: 16px;
+    padding: 50px;
+    z-index: 10;
+}
+#profile p{
+    color:darkslategray;
+}
+#profile a{
+    text-decoration: none;
 }

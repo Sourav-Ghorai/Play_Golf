@@ -133,3 +133,14 @@ gsap.from("#page4 h1",{
         scrub: 3
     }
 })
+
+var footer = document.querySelector("#footer-block");
+footer.addEventListener("mouseenter",function(){
+    crsr.style.zIndex = "-1";
+    crsrBlur.style.zIndex = "-1";
+})
+
+footer.addEventListener("mouseleave",function(){
+    crsr.style.zIndex = "9";
+    crsrBlur.style.zIndex = "1";
+})
